@@ -7,5 +7,5 @@ func main() {
 }
 
 func hello(w string) {
-	fmt.Printf("Hello %s!", w)
+	fmt.Printf("Hello %s!\n", w)
 }
