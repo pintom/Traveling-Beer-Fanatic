@@ -38,9 +38,9 @@ func main() {
 	}
 
 	// Open CSVs
-	rawGeocodes := openCSV("geocodes.csv")
-	rawBreweries := openCSV("breweries.csv")
-	rawBeers := openCSV("beers.csv")
+	rawGeocodes := openCSV("./breweries/geocodes.csv")
+	rawBreweries := openCSV("./breweries/breweries.csv")
+	rawBeers := openCSV("./breweries/beers.csv")
 
 	type Location struct {
 		Type        string    `json:"type,omitempty"`

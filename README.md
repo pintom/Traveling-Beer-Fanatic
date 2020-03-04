@@ -1,11 +1,11 @@
 # Traveling-Beer-Fanatic
 
 To build:
-docker-compose up -d
-
-
+```
+$ make
+```
 
 To run:
-go build -o tbf && ./tbf --lat=51.355468 --long=11.100790
-
-CVS dumps are taker from https://github.com/brewdega/open-beer-database-dumps
+```
+$ ./beerfan -lat 51.742503 -long 19.43295
+```

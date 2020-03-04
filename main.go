@@ -10,6 +10,7 @@ import (
 	"google.golang.org/grpc"
 	"log"
 	"math"
+
 	"time"
 )
 
@@ -33,6 +34,11 @@ func main() {
 		return
 	}
 
+	cli(breweries, startTimer)
+
+}
+
+func cli(breweries breweries, startTimer time.Time) {
 	fmt.Printf("Found %d beer factories:\n", len(breweries.orderedList))
 
 	fmt.Printf("\t -> HOME: %g %g distance 0km\n", *lat, *long)
